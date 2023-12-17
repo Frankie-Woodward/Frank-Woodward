@@ -1,6 +1,7 @@
 import './style.css'
 import { useState, useEffect } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import React from 'react';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
