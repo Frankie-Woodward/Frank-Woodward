@@ -11,7 +11,19 @@ export default function App() {
 
   return (
     <>
-      
+      <Swiper
+        className="mySwiper swiper-h"
+        spaceBetween={50}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+      >
+        <SwiperSlide><Homepage /></SwiperSlide>
+        <SwiperSlide><ProjectsPage /></SwiperSlide>
+        <SwiperSlide><FrankiePage /></SwiperSlide>
+        <SwiperSlide><ContactPage /></SwiperSlide>
+      </Swiper>
     </>
   )
 }
