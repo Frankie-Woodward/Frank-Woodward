@@ -17,7 +17,7 @@ export default function Homepage() {
             <h1>Welcome to Frankie's Portfolio!</h1>
             <br></br>
             <h3></h3>
-            {/* conditional to safely access username */}
+            
             <br></br>
 
         </div>

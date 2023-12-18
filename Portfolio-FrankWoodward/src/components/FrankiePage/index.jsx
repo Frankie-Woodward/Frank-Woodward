@@ -16,17 +16,37 @@ export default function FrankiePage() {
             className="mySwiper2 swiper-v"
             direction={'vertical'}
             spaceBetween={50}
-            pagination={{
-              clickable: true,
-            }}
+            pagination={{ clickable: true }}
             modules={[Pagination]}
-          >
-            <SwiperSlide>Vertical Slide 1</SwiperSlide>
-            <SwiperSlide>Vertical Slide 2</SwiperSlide>
-            <SwiperSlide>Vertical Slide 3</SwiperSlide>
-            <SwiperSlide>Vertical Slide 4</SwiperSlide>
-            <SwiperSlide>Vertical Slide 5</SwiperSlide>
-          </Swiper>
+            style={{ width: '100%', height: '100%' }}
+        >
+          
+            <SwiperSlide>
+                <div className='career'>
+                    <h1>From Flight To Terminal</h1>
+                        <p>Career Journey</p>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className='school'>
+                    <h1>Life and Chicago</h1>
+                        <p></p>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className='army'>
+                    <h1>All Aviation</h1>
+                        <p></p>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className='family'>
+                    <h1>Colorado Springs & Herme</h1>
+                        <p></p>
+                </div>
+            </SwiperSlide>
+        
+        </Swiper>
       </>
     )
   }

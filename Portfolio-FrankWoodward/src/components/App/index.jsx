@@ -32,7 +32,7 @@ export default function App() {
           <ProjectsPage />
        
           </SwiperSlide>
-        <SwiperSlide><FrankiePage /></SwiperSlide>
+        <SwiperSlide style={{ width: '100vw', height: '100vh' }}><FrankiePage /></SwiperSlide>
         <SwiperSlide><ContactPage /></SwiperSlide>
       </Swiper>
     </>
