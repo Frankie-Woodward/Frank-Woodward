@@ -1,0 +1,111 @@
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #9ac7ee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #5999c4;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-v {
+  background: #3c327c;
+}
+
+
+.swiper-pagination-bullet-active {
+  background: #fff; /* Change active bullet color */
+}
+.swiper-pagination-bullet {
+  opacity: 1; /* Make all bullets fully opaque */
+  width: 10px; /* Bullet width */
+  height: 10px; /* Bullet height */
+}
+.arrow {
+  width: 50px;
+  height: 50px;
+  border: solid black;
+  display: inline-block;
+  margin: 10px;
+}
+
+.left-arrow {
+  transform: rotate(-90deg);
+  animation: leftArrowAnimation 2s infinite;
+}
+
+.down-arrow {
+  transform: rotate(180deg);
+  animation: downArrowAnimation 2s infinite;
+}
+
+.right-arrow {
+  transform: rotate(90deg);
+  animation: rightArrowAnimation 2s infinite;
+  display: flex;
+  align-items: flex-end;
+}
+
+@keyframes leftArrowAnimation {
+  0%, 100% { transform: rotate(-90deg) translateX(0); }
+  50% { transform: rotate(-90deg) translateX(-10px); }
+}
+@keyframes rightArrowAnimation {
+  0%, 100% { transform: rotate(0deg) translateX(0); }
+  50% { transform: rotate(0deg) translateX(10px); }
+}
+@keyframes downArrowAnimation {
+  0%, 100% { transform: rotate(180deg) translateY(0); }
+  50% { transform: rotate(180deg) translateY(10px); }
+}
+
+.arrow-container {
+  width: 200px; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
+  overflow: hidden; /* This will hide the parts of the image that overflow the container */
+}
+.arrow-container img {
+  height: 20%;
+  width: 20%;
+  border-radius: 25%;
+  opacity: 75%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Define the styles for active links */
+.nav-link.active {
+  font-weight: bold; /* Customize the active link style here */
+  color: blue; /* Customize the color here */
+}

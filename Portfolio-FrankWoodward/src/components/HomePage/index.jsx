@@ -1,14 +1,20 @@
 import './style.css'
-import { useState, useEffect } from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react';
+
 import React from 'react';
+import arrowImage from '../../assets/arrow.jpg';
 
-import 'swiper/css';
-import 'swiper/css/pagination';
 
-import { Pagination } from 'swiper/modules';
 
 export default function Homepage() {
+
+const ArrowAnimation = () => {
+    return (
+        <div className="arrow-container">
+            <img src={arrowImage} alt="Right Arrow" className="arrow right-arrow" />
+        </div>
+    );
+    }
+      
   
 
     return (
@@ -19,7 +25,7 @@ export default function Homepage() {
             <h3></h3>
             
             <br></br>
-
+            <ArrowAnimation />
         </div>
       </>
     )
