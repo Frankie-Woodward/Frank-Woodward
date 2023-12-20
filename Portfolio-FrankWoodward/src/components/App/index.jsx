@@ -7,7 +7,7 @@ import FrankiePage from '../FrankiePage';
 import ContactPage from '../ContactPage';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Navbar from '../NavBar';
-
+import { useLocation } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
@@ -15,6 +15,7 @@ import { Pagination } from 'swiper/modules';
 export default function App() {
   const [activeIndex, setActiveIndex] = useState(0);
   let swiperInstance = null;
+  const location = useLocation()
 
   const updateActiveIndex = (swiper) => {
     setActiveIndex(swiper.activeIndex);
@@ -36,10 +37,11 @@ export default function App() {
         onSwiper={(swiper) => (swiperInstance = swiper)}
         onSlideChange={updateActiveIndex}
       >
-        {/* Link tags removed as they should not wrap SwiperSlide */}
-        <SwiperSlide key="home-slide" style={{ width: '100vw', height: '100vh' }}>
-          <Homepage />
-        </SwiperSlide>
+   
+          <SwiperSlide key="home-slide" style={{ width: '100vw', height: '100vh' }}>
+            <Homepage />
+          </SwiperSlide>
+        
 
         <SwiperSlide key="projects-slide" style={{ width: '100vw', height: '100vh' }}>
           <ProjectsPage />
@@ -54,8 +56,8 @@ export default function App() {
         </SwiperSlide>
       </Swiper>
 
+
       <Routes>
-        <Route path="/" element={<Homepage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/frankie" element={<FrankiePage />} />
         <Route path="/contact" element={<ContactPage />} />

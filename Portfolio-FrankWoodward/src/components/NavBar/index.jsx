@@ -18,7 +18,7 @@ const Navbar = ({ activeIndex, navigateToSlide }) => {
 
   return (
     <nav>
-      <ul className="nav nav-pills">
+      <ul className="nav justify-content-center">
         {Object.keys(routeToIndexMap).map((path) => (
           <li key={path} className="nav-item">
             <NavLink
