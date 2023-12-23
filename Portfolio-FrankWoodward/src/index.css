@@ -44,45 +44,47 @@ body {
   display: inline-block;
   margin: 10px;
 }
-
 .left-arrow {
-  transform: rotate(-90deg);
+  transform: rotate(180deg);
   animation: leftArrowAnimation 2s infinite;
 }
 
+
 .down-arrow {
-  transform: rotate(180deg);
+  transform: rotate(90deg);
   animation: downArrowAnimation 2s infinite;
 }
 
+
 .right-arrow {
-  transform: rotate(90deg);
+  transform: rotate(0deg);
   animation: rightArrowAnimation 2s infinite;
-  display: flex;
-  align-items: flex-end;
+ 
+}
+@keyframes downArrowAnimation {
+  0%, 100% { transform: rotate(90deg) translateX(0); }
+  50% { transform: rotate(90deg) translateX(-10px); }
+}
+@keyframes leftArrowAnimation {
+  0%, 100% { transform: rotate(180deg) translateX(0); }
+  50% { transform: rotate(180deg) translateX(-10px); }
 }
 
-@keyframes leftArrowAnimation {
-  0%, 100% { transform: rotate(-90deg) translateX(0); }
-  50% { transform: rotate(-90deg) translateX(-10px); }
-}
 @keyframes rightArrowAnimation {
   0%, 100% { transform: rotate(0deg) translateX(0); }
   50% { transform: rotate(0deg) translateX(10px); }
 }
-@keyframes downArrowAnimation {
-  0%, 100% { transform: rotate(180deg) translateY(0); }
-  50% { transform: rotate(180deg) translateY(10px); }
-}
+
+
+
 
 .arrow-container {
   width: 200px; /* Adjust the width as needed */
   height: 200px; /* Adjust the height as needed */
-  overflow: hidden; /* This will hide the parts of the image that overflow the container */
 }
 .arrow-container img {
-  height: 20%;
-  width: 20%;
+  height: 10%;
+  width: 10%;
   border-radius: 25%;
   opacity: 75%;
   object-fit: cover;

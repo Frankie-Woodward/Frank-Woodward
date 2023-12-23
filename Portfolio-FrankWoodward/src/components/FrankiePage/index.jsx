@@ -1,6 +1,7 @@
 import './style.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import React from 'react';
+import arrowImage from '../../assets/arrow.jpg';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -8,10 +9,42 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 
 export default function FrankiePage() {
-  
+    const DownArrowAnimation = () => {
+        return (
+            <div className="arrow-container">
+                <div className='d-arrow'>
+                <img src={arrowImage} alt="Down Arrow" className="arrow down-arrow" />
+                </div>
+               
+            </div>
+        )};
+    const LeftArrowAnimation = () => {
+        return (
+            <div className="arrow-container">
+                <div className='l-arrow'>
+                <img src={arrowImage} alt="Left Arrow" className="arrow left-arrow" />
+                </div>
+               
+            </div>
+        )};
+    const RightArrowAnimation = () => {
+        return (
+            <div className="arrow-container">
+                <div className='r-arrow'>
+                <img src={arrowImage} alt="Right Arrow" className="arrow right-arrow" />
+                </div>
+               
+            </div>
+        )};
 
     return (
       <>
+
+      <div>
+      <DownArrowAnimation />
+      <LeftArrowAnimation />
+        <RightArrowAnimation />
+      </div>
         <Swiper
             className="mySwiper2 swiper-v"
             direction={'vertical'}
