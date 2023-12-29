@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.css';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 import Homepage from '../HomePage';
 import ProjectsPage from '../ProjectsPage';
 import FrankiePage from '../FrankiePage';
 import ContactPage from '../ContactPage';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Navbar from '../NavBar';
-import { useLocation } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
@@ -15,10 +14,21 @@ import { Pagination } from 'swiper/modules';
 export default function App() {
   const [activeIndex, setActiveIndex] = useState(0);
   let swiperInstance = null;
+  const navigate = useNavigate();
   const location = useLocation()
+
+  useEffect(() => {
+    const paths = ['', '/projects', '/frankie', '/contact'];
+    const index = paths.indexOf(location.pathname);
+    if (swiperInstance && index >= 0) {
+      swiperInstance.slideTo(index);
+    }
+  }, [location, swiperInstance]);
 
   const updateActiveIndex = (swiper) => {
     setActiveIndex(swiper.activeIndex);
+    const path = swiper.slides[swiper.activeIndex].getAttribute('data-path');
+    navigate(path);
   };
 
   const navigateToSlide = (index) => {
@@ -38,9 +48,10 @@ export default function App() {
         onSlideChange={updateActiveIndex}
       >
    
-          <SwiperSlide key="home-slide" style={{ width: '100vw', height: '100vh' }}>
-            <Homepage />
-          </SwiperSlide>
+   <SwiperSlide key="home-slide" data-path="/">
+    <Homepage />
+</SwiperSlide>
+
         
 
         <SwiperSlide key="projects-slide" style={{ width: '100vw', height: '100vh' }}>
@@ -58,10 +69,12 @@ export default function App() {
 
 
       <Routes>
+        <Route path="/" element={<></>} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/frankie" element={<FrankiePage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
+
     </div>
   );
 }

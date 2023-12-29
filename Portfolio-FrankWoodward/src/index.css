@@ -91,3 +91,10 @@ body {
   object-position: center;
 }
 
+.icon-link img {
+  /* Example styling, adjust as needed */
+  width: 20px; /* Adjust the size as needed */
+  height: auto;
+  vertical-align: middle; /* For alignment with the text */
+  margin-right: 5px; /* Space between the icon and text */
+}

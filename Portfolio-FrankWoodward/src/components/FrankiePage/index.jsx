@@ -39,7 +39,7 @@ export default function FrankiePage() {
 
     return (
       <>
-
+        
       <div>
       <DownArrowAnimation />
       <LeftArrowAnimation />
