@@ -1,7 +1,15 @@
 import './style.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import React from 'react';
-
+import nodejs_logo from '../../assets/nodejs_logo.png';
+import CSS3_logo from '../../assets/CSS3 - logo .png';
+import express_js_logo from '../../assets/Expressjs-logo.svg';
+import HTML5_logo from '../../assets/html5-logo.png';
+import javaScript_logo from '../../assets/JavaScript-Logo.png';
+import mongoDB_logo from '../../assets/MongoDB-Logo.jpg';
+import pj_logo from '../../assets/python_django.png';
+import react_logo from '../../assets/react-logo.png';
+import postgresql_logo from '../../assets/postgresql-logo.png';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -59,27 +67,83 @@ export default function ProjectsPage() {
             <SwiperSlide>
                 <div className='identify'>
                     <h1>Identify Quest</h1>
-                        <p></p>
+                    <figure className="figure">
+                        <img src="..." className="figure-img img-fluid rounded" alt="..."/>
+                        <figcaption className="figure-caption">A caption for the above image.</figcaption>
+                    </figure>
+                    <figure className="figure">
+                        <img src="..." className="figure-img img-fluid rounded" alt="..."/>
+                        <figcaption className="figure-caption">A caption for the above image.</figcaption>
+                    </figure>
+                    <div className='project-description'>
+                        <p>An AI Composite-Sketch application which allows users to create ai-generated 
+                            composite sketches of individuals who have committed a crime and save them 
+                            to submit to their local 911 emergency teams.
+                        </p>
+                    </div>
+                    <div className='languages_used'>
+                        <img src={mongoDB_logo} alt="mongodb"></img>
+                        <img src={express_js_logo}></img>
+                        <img src={react_logo}></img>
+                       
+                    </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <div className='c-forge'>
                     <h1>Character Forge</h1>
-                        <p></p>
+                    <figure className="figure">
+                        <img src="..." className="figure-img img-fluid rounded" alt="..."/>
+                        <figcaption className="figure-caption">A caption for the above image.</figcaption>
+                    </figure>
+                    <figure className="figure">
+                        <img src="..." className="figure-img img-fluid rounded" alt="..."/>
+                        <figcaption className="figure-caption">A caption for the above image.</figcaption>
+                    </figure>
+                    <div className='project-description'>
+                    <p> A Dungeons and Dragons Character Creation Application that allows users to perform
+                         a variety of tasks related to the Dungeons and Dragons game, such as:
+                         <br></br>
+                        a. Choosing from several character race and alignments 
+                        <br></br>
+                        b. The ability for users to roll the dice for their created character’s stats</p>
+                    </div>
+                    <div className='languages_used'>
+                        <img src={pj_logo}></img>
+                        <img src={postgresql_logo}></img>
+                        
+                     
+                       
+                    </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <div className='catchem-all'>
                     <h1>Catchem All</h1>
-                        <p></p>
+                    <div className='project-images'>
+                        <figure className="figure">
+                            <img src="..." className="figure-img img-fluid rounded" alt="..."/>
+                            <figcaption className="figure-caption">A caption for the above image.</figcaption>
+                        </figure>
+                        <figure className="figure">
+                            <img src="..." className="figure-img img-fluid rounded" alt="..."/>
+                            <figcaption className="figure-caption">A caption for the above image.</figcaption>
+                        </figure>
+                    </div>
+                    <div className='project-description'>
+                    <p>A Pokémon TCG Card Collector that allows users to view the latest standard pokemon 
+                        TCG sets/decks as well as save their own custom decks to view at their leisure</p>
+                    </div>
+                    <div className='languages_used'>
+                        <img src={mongoDB_logo} alt="mongodb"></img>
+                        <img src={express_js_logo}></img>
+                     
+                       
+                    </div>
+                        
                 </div>
             </SwiperSlide>
-            <SwiperSlide>
-                <div className='identify'>
-                    <h1>Retro Funko</h1>
-                        <p></p>
-                </div>
-            </SwiperSlide>
+         
         
         </Swiper>
        
