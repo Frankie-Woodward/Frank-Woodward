@@ -10,6 +10,11 @@ import mongoDB_logo from '../../assets/MongoDB-Logo.jpg';
 import pj_logo from '../../assets/python_django.png';
 import react_logo from '../../assets/react-logo.png';
 import postgresql_logo from '../../assets/postgresql-logo.png';
+import idquest_request from '../../assets/idquest_request.png';
+import idquest_response from '../../assets/idquest_response.png';
+
+
+
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -21,8 +26,17 @@ export default function ProjectsPage() {
     const DownArrowAnimation = () => {
         return (
             <div className="arrow-container">
-                <div className='d-arrow'>
+                <div className='down-arrow'>
                 <img src={arrowImage} alt="Down Arrow" className="arrow down-arrow" />
+                </div>
+               
+            </div>
+        )};
+    const UpArrowAnimation = () => {
+        return (
+            <div className="arrow-container">
+                <div className='up-arrow'>
+                <img src={arrowImage} alt="Up Arrow" className="arrow up-arrow" />
                 </div>
                
             </div>
@@ -30,7 +44,7 @@ export default function ProjectsPage() {
     const LeftArrowAnimation = () => {
         return (
             <div className="arrow-container">
-                <div className='l-arrow'>
+                <div className='left-arrow'>
                 <img src={arrowImage} alt="Left Arrow" className="arrow left-arrow" />
                 </div>
                
@@ -39,7 +53,7 @@ export default function ProjectsPage() {
     const RightArrowAnimation = () => {
         return (
             <div className="arrow-container">
-                <div className='r-arrow'>
+                <div className='right-arrow'>
                 <img src={arrowImage} alt="Right Arrow" className="arrow right-arrow" />
                 </div>
                
@@ -50,11 +64,7 @@ export default function ProjectsPage() {
     return (
       <>
        
-
-        <div className='projectspage-container'>
-        <LeftArrowAnimation />
-        <RightArrowAnimation />
-        </div>
+   
         <Swiper
             className="mySwiper2 swiper-v"
             direction={'vertical'}
@@ -65,62 +75,52 @@ export default function ProjectsPage() {
         >
           
             <SwiperSlide>
-                <div className='identify'>
-                    <h1>Identify Quest</h1>
-                    <figure className="figure">
-                        <img src="..." className="figure-img img-fluid rounded" alt="..."/>
-                        <figcaption className="figure-caption">A caption for the above image.</figcaption>
-                    </figure>
-                    <figure className="figure">
-                        <img src="..." className="figure-img img-fluid rounded" alt="..."/>
-                        <figcaption className="figure-caption">A caption for the above image.</figcaption>
-                    </figure>
-                    <div className='project-description'>
-                        <p>An AI Composite-Sketch application which allows users to create ai-generated 
-                            composite sketches of individuals who have committed a crime and save them 
-                            to submit to their local 911 emergency teams.
-                        </p>
-                    </div>
-                    <div className='languages_used'>
-                        <img src={mongoDB_logo} alt="mongodb"></img>
-                        <img src={express_js_logo}></img>
-                        <img src={react_logo}></img>
-                       
-                    </div>
+            
+                <div className='slide-container'>
+                    <div className='left-arrow'>
+                <LeftArrowAnimation />
                 </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                <div className='c-forge'>
-                    <h1>Character Forge</h1>
-                    <figure className="figure">
-                        <img src="..." className="figure-img img-fluid rounded" alt="..."/>
-                        <figcaption className="figure-caption">A caption for the above image.</figcaption>
-                    </figure>
-                    <figure className="figure">
-                        <img src="..." className="figure-img img-fluid rounded" alt="..."/>
-                        <figcaption className="figure-caption">A caption for the above image.</figcaption>
-                    </figure>
-                    <div className='project-description'>
-                    <p> A Dungeons and Dragons Character Creation Application that allows users to perform
-                         a variety of tasks related to the Dungeons and Dragons game, such as:
-                         <br></br>
-                        a. Choosing from several character race and alignments 
-                        <br></br>
-                        b. The ability for users to roll the dice for their created character’s stats</p>
-                    </div>
-                    <div className='languages_used'>
-                        <img src={pj_logo}></img>
-                        <img src={postgresql_logo}></img>
+                    <div className='identify'>
+                        <h1>Identify Quest</h1>
+                        <figure className="figure">
+                            <img src={idquest_request} className="figure-img img-fluid rounded" alt="..."/>
+                            <figcaption className="figure-caption">A caption for the above image.</figcaption>
+                        </figure>
+                        <figure className="figure">
+                            <img src={idquest_response} className="figure-img img-fluid rounded" alt="..."/>
+                            <figcaption className="figure-caption">A caption for the above image.</figcaption>
+                        </figure>
+                        <div className='project-description'>
+                            <p>An AI Composite-Sketch application which allows users to <br></br>create ai-generated 
+                                composite sketches of individuals who have committed<br></br> a crime and save them 
+                                to submit to their local 911 emergency teams. 
+                            </p>
+                        </div>
+                        <div className='languages_used'>
+                            <img src={mongoDB_logo} alt="mongodb"></img>
+                            <img src={express_js_logo}></img>
+                            <img src={react_logo}></img>
                         
-                     
-                       
+                        </div>  
+                    </div>
+                    <div className='down-arrow'>
+                        <DownArrowAnimation />
+                        </div>
+                    <div className='right-arrow'>
+                    <RightArrowAnimation />
                     </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className='catchem-all'>
-                    <h1>Catchem All</h1>
-                    <div className='project-images'>
+                <div className='slide-container'>
+                    <div className='up-arrow'>
+                        <UpArrowAnimation />
+                    </div>
+                    <div className='left-arrow'>
+                <LeftArrowAnimation />
+                </div>
+                    <div className='c-forge'>
+                        <h1>Character Forge</h1>
                         <figure className="figure">
                             <img src="..." className="figure-img img-fluid rounded" alt="..."/>
                             <figcaption className="figure-caption">A caption for the above image.</figcaption>
@@ -129,29 +129,65 @@ export default function ProjectsPage() {
                             <img src="..." className="figure-img img-fluid rounded" alt="..."/>
                             <figcaption className="figure-caption">A caption for the above image.</figcaption>
                         </figure>
+                        <div className='project-description'>
+                        <p> A Dungeons and Dragons Character Creation Application that allows users to perform
+                            a variety of tasks related to the Dungeons and Dragons game, such as:
+                            <br></br>
+                            a. Choosing from several character race and alignments 
+                            <br></br>
+                            b. The ability for users to roll the dice for their created character’s stats</p>
+                        </div>
+                        <div className='languages_used'>
+                            <img src={pj_logo}></img>
+                            <img src={postgresql_logo}></img>
+                    
+                        </div>
                     </div>
-                    <div className='project-description'>
-                    <p>A Pokémon TCG Card Collector that allows users to view the latest standard pokemon 
-                        TCG sets/decks as well as save their own custom decks to view at their leisure</p>
+                    <div className='down-arrow'>
+                        <DownArrowAnimation />
+                        </div>
+                    <div className='right-arrow'>
+                    <RightArrowAnimation />
                     </div>
-                    <div className='languages_used'>
-                        <img src={mongoDB_logo} alt="mongodb"></img>
-                        <img src={express_js_logo}></img>
-                     
-                       
-                    </div>
-                        
                 </div>
             </SwiperSlide>
-         
-        
+            <SwiperSlide>
+                <div className='slide-container'>
+                <div className='up-arrow'><UpArrowAnimation /></div>
+                        <div className='catchem-all'>
+                            <h1>Catchem All</h1>
+                            <div className='project-images'>
+                                <figure className="figure">
+                                    <img src="..." className="figure-img img-fluid rounded" alt="..."/>
+                                    <figcaption className="figure-caption">A caption for the above image.</figcaption>
+                                </figure>
+                                <figure className="figure">
+                                    <img src="..." className="figure-img img-fluid rounded" alt="..."/>
+                                    <figcaption className="figure-caption">A caption for the above image.</figcaption>
+                                </figure>
+                            </div>
+                            <div className='project-description'>
+                            <p>A Pokémon TCG Card Collector that allows users to view the latest standard pokemon 
+                                TCG sets/decks as well as save their own custom decks to view at their leisure</p>
+                            </div>
+                            <div className='languages_used'>
+                                <img src={mongoDB_logo} alt="mongodb"></img>
+                                <img src={express_js_logo}></img>
+                            </div>
+                                
+                        </div>
+                        <div className='right-arrow'>
+                    <RightArrowAnimation />
+                    </div>
+                </div>
+            </SwiperSlide>
         </Swiper>
-       
-        
-       <div>
-       <DownArrowAnimation />
-       </div>
-      </>
+
       
-    )
+        
+      
+      </>
+     
+      
+    );
   }

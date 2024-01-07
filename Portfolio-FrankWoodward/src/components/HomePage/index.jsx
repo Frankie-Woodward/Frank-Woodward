@@ -46,8 +46,9 @@ const ArrowAnimation = () => {
                 <a href="#" className="card-link">Another link</a>
               </div>
             </div>
-          
+          <div className='right-arrow'>
             <ArrowAnimation />
+            </div>
             </div>
             <div className="languages-section">
                     <h2>Programming Languages</h2>
