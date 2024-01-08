@@ -12,9 +12,10 @@
     grid-column: 2 / 3; /* Place content in the middle column */
     grid-row: 2 / 3;
     margin: 50px 100px 100px 100px;
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.5);
 
   }
-  
+ 
 
   /* Specific styling for left-arrow to ensure it is placed correctly */
   .left-arrow {
@@ -48,9 +49,17 @@
 .languages_used img {
     height: 40px;
     width: auto;
+    margin: 10px;
+    box-shadow: 20px 20px 20px 20px rgba(97, 99, 146, 0.5);
+
 }
 
 
+.figure {
+    margin: 0 25px; /* 25px margin on each side of the figure */
+}
+
+/* Rest of your styles remain the same */
 
 .figure img {
     height: 250px;
@@ -58,6 +67,5 @@
    
 }
 .figure-caption {
-    display: flex;
-    flex-wrap: wrap;
+   margin: 0px 10px 0px 0px;
 }

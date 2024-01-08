@@ -12,6 +12,10 @@ import react_logo from '../../assets/react-logo.png';
 import postgresql_logo from '../../assets/postgresql-logo.png';
 import idquest_request from '../../assets/idquest_request.png';
 import idquest_response from '../../assets/idquest_response.png';
+import cforge_creation from '../../assets/cforge_creation.png';
+import cforge_profile from '../../assets/cforge_profile.png';
+import catchem_decks from '../../assets/catchem_decks.png';
+import catchem_deck from '../../assets/catchem_deck.png';
 
 
 
@@ -84,11 +88,11 @@ export default function ProjectsPage() {
                         <h1>Identify Quest</h1>
                         <figure className="figure">
                             <img src={idquest_request} className="figure-img img-fluid rounded" alt="..."/>
-                            <figcaption className="figure-caption">A caption for the above image.</figcaption>
+                            <figcaption className="figure-caption">AI Chat Interface</figcaption>
                         </figure>
                         <figure className="figure">
                             <img src={idquest_response} className="figure-img img-fluid rounded" alt="..."/>
-                            <figcaption className="figure-caption">A caption for the above image.</figcaption>
+                            <figcaption className="figure-caption">Composite Image Response from AI</figcaption>
                         </figure>
                         <div className='project-description'>
                             <p>An AI Composite-Sketch application which allows users to <br></br>create ai-generated 
@@ -122,12 +126,12 @@ export default function ProjectsPage() {
                     <div className='c-forge'>
                         <h1>Character Forge</h1>
                         <figure className="figure">
-                            <img src="..." className="figure-img img-fluid rounded" alt="..."/>
-                            <figcaption className="figure-caption">A caption for the above image.</figcaption>
+                            <img src={cforge_creation} className="figure-img img-fluid rounded" alt="..."/>
+                            <figcaption className="figure-caption">Character Creation Interface</figcaption>
                         </figure>
                         <figure className="figure">
-                            <img src="..." className="figure-img img-fluid rounded" alt="..."/>
-                            <figcaption className="figure-caption">A caption for the above image.</figcaption>
+                            <img src={cforge_profile} className="figure-img img-fluid rounded" alt="..."/>
+                            <figcaption className="figure-caption">Character Profile & Details</figcaption>
                         </figure>
                         <div className='project-description'>
                         <p> A Dungeons and Dragons Character Creation Application that allows users to perform
@@ -158,11 +162,11 @@ export default function ProjectsPage() {
                             <h1>Catchem All</h1>
                             <div className='project-images'>
                                 <figure className="figure">
-                                    <img src="..." className="figure-img img-fluid rounded" alt="..."/>
+                                    <img src={catchem_decks} className="figure-img img-fluid rounded" alt="..."/>
                                     <figcaption className="figure-caption">A caption for the above image.</figcaption>
                                 </figure>
                                 <figure className="figure">
-                                    <img src="..." className="figure-img img-fluid rounded" alt="..."/>
+                                    <img src={catchem_deck} className="figure-img img-fluid rounded" alt="..."/>
                                     <figcaption className="figure-caption">A caption for the above image.</figcaption>
                                 </figure>
                             </div>
