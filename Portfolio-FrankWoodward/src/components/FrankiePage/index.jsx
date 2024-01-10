@@ -18,6 +18,15 @@ export default function FrankiePage() {
                
             </div>
         )};
+        const UpArrowAnimation = () => {
+            return (
+                <div className="arrow-container">
+                    <div className='up-arrow'>
+                    <img src={arrowImage} alt="Up Arrow" className="arrow up-arrow" />
+                    </div>
+                   
+                </div>
+            )};
     const LeftArrowAnimation = () => {
         return (
             <div className="arrow-container">
@@ -40,11 +49,7 @@ export default function FrankiePage() {
     return (
       <>
         
-      <div>
-      <DownArrowAnimation />
-      <LeftArrowAnimation />
-        <RightArrowAnimation />
-      </div>
+
         <Swiper
             className="mySwiper2 swiper-v"
             direction={'vertical'}
@@ -55,31 +60,124 @@ export default function FrankiePage() {
         >
           
             <SwiperSlide>
+            <div className='slide-container'>
+                    <div className='left-arrow'>
+                <LeftArrowAnimation />
+                </div>
                 <div className='career'>
                     <h1>From Flight To Terminal</h1>
-                        <p>Career Journey</p>
+                    <figure className="figure">
+                            <img src='' className="figure-img img-fluid rounded" alt="..."/>
+                            <figcaption className="figure-caption">some text</figcaption>
+                        </figure>
+                        <figure className="figure">
+                            <img src='' className="figure-img img-fluid rounded" alt=""/>
+                            <figcaption className="figure-caption">some text</figcaption>
+                        </figure>
+                        <div className='career-description'>
+                            <p> 
+                            </p>
+                        </div>
+                </div>
+                <div className='down-arrow'>
+                        <DownArrowAnimation />
+                        </div>
+                    <div className='right-arrow'>
+                    <RightArrowAnimation />
+                    </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
+            <div className='slide-container'>
+            <div className='up-arrow'>
+                        <UpArrowAnimation />
+                    </div>
+                    <div className='left-arrow'>
+                <LeftArrowAnimation />
+                </div>
                 <div className='school'>
                     <h1>Life and Chicago</h1>
-                        <p></p>
+                    <figure className="figure">
+                            <img src='' className="figure-img img-fluid rounded" alt="..."/>
+                            <figcaption className="figure-caption">some text</figcaption>
+                        </figure>
+                        <figure className="figure">
+                            <img src='' className="figure-img img-fluid rounded" alt=""/>
+                            <figcaption className="figure-caption">some text</figcaption>
+                        </figure>
+                        <div className='career-description'>
+                            <p> 
+                            </p>
+                        </div>
+                </div>
+                <div className='down-arrow'>
+                        <DownArrowAnimation />
+                        </div>
+                    <div className='right-arrow'>
+                    <RightArrowAnimation />
+                    </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
+            <div className='slide-container'>
+            <div className='up-arrow'>
+                        <UpArrowAnimation />
+                    </div>
+                    <div className='left-arrow'>
+                <LeftArrowAnimation />
+                </div>
                 <div className='army'>
                     <h1>All Aviation</h1>
-                        <p></p>
+                    <figure className="figure">
+                            <img src='' className="figure-img img-fluid rounded" alt="..."/>
+                            <figcaption className="figure-caption">some text</figcaption>
+                        </figure>
+                        <figure className="figure">
+                            <img src='' className="figure-img img-fluid rounded" alt=""/>
+                            <figcaption className="figure-caption">some text</figcaption>
+                        </figure>
+                        <div className='career-description'>
+                            <p> 
+                            </p>
+                        </div>
+                </div>
+                <div className='down-arrow'>
+                        <DownArrowAnimation />
+                        </div>
+                    <div className='right-arrow'>
+                    <RightArrowAnimation />
+                    </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
+            <div className='slide-container'>
+            <div className='up-arrow'>
+                        <UpArrowAnimation />
+                    </div>
+                    <div className='left-arrow'>
+                <LeftArrowAnimation />
+                </div>
                 <div className='family'>
                     <h1>Colorado Springs & Herme</h1>
-                        <p></p>
+                    <figure className="figure">
+                            <img src='' className="figure-img img-fluid rounded" alt="..."/>
+                            <figcaption className="figure-caption">some text</figcaption>
+                        </figure>
+                        <figure className="figure">
+                            <img src='' className="figure-img img-fluid rounded" alt=""/>
+                            <figcaption className="figure-caption">some text</figcaption>
+                        </figure>
+                        <div className='career-description'>
+                            <p> 
+                            </p>
+                        </div>
                 </div>
+                    <div className='right-arrow'>
+                    <RightArrowAnimation />
+                    </div>
+            </div>
             </SwiperSlide>
-        
         </Swiper>
       </>
-    )
+    );
   }

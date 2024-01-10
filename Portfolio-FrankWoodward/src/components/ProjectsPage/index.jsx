@@ -67,8 +67,6 @@ export default function ProjectsPage() {
 
     return (
       <>
-       
-   
         <Swiper
             className="mySwiper2 swiper-v"
             direction={'vertical'}
@@ -158,16 +156,19 @@ export default function ProjectsPage() {
             <SwiperSlide>
                 <div className='slide-container'>
                 <div className='up-arrow'><UpArrowAnimation /></div>
+                <div className='left-arrow'>
+                <LeftArrowAnimation />
+                </div>
                         <div className='catchem-all'>
                             <h1>Catchem All</h1>
                             <div className='project-images'>
                                 <figure className="figure">
                                     <img src={catchem_decks} className="figure-img img-fluid rounded" alt="..."/>
-                                    <figcaption className="figure-caption">A caption for the above image.</figcaption>
+                                    <figcaption className="figure-caption">Home page showcasing the latest decks</figcaption>
                                 </figure>
                                 <figure className="figure">
                                     <img src={catchem_deck} className="figure-img img-fluid rounded" alt="..."/>
-                                    <figcaption className="figure-caption">A caption for the above image.</figcaption>
+                                    <figcaption className="figure-caption">Scarlet & Violet 151 Deck</figcaption>
                                 </figure>
                             </div>
                             <div className='project-description'>
@@ -186,12 +187,6 @@ export default function ProjectsPage() {
                 </div>
             </SwiperSlide>
         </Swiper>
-
-      
-        
-      
       </>
-     
-      
     );
   }
