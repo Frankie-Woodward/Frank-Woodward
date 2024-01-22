@@ -76,6 +76,18 @@ export default function FrankiePage() {
                         </figure>
                         <div className='career-description'>
                             <p> 
+                            Why I wanted to get into swe - 
+                            I understand the irony, but I have to say that the technical skills required for operating an 
+                            AH64E helicopter provided me with the attention to detail needed to be a successful software engineer. 
+                            From planning, rehearsals, and troubleshooting software issues in the helicopter, to planning, testing, 
+                            and debugging software code in the terminal of my computer.
+                            General Assembly
+                            I attended General Assembly’s Software Engineering Immersive course and graduated in November of 2023. 
+                            I had only been slowly progressing in my  HTML at that point, and the course was able to give me the 
+                            tools needed to code applications with React, JS, HTML, CSS, Python, and SQL database operations. 
+                            DefendUS - 65square
+                            I am currently volunteering for a nonprofit ran organization as a backend Python tester for their 
+                            social media application, 65square. 
                             </p>
                         </div>
                 </div>
@@ -106,7 +118,10 @@ export default function FrankiePage() {
                             <figcaption className="figure-caption">some text</figcaption>
                         </figure>
                         <div className='career-description'>
-                            <p> 
+                            <p>
+                            Born and raised in Chicago, IL in the era of Michael Jordon. I attended DeVry University Advantage Academy 
+                            where I graduated with my HS Diploma and Associates degree in Network Systems Administration in 2006. 
+                            I attended Illinois Institute Of Technology and graduated with my Bachelor’s in Business Administration in 2010.
                             </p>
                         </div>
                 </div>
@@ -138,6 +153,9 @@ export default function FrankiePage() {
                         </figure>
                         <div className='career-description'>
                             <p> 
+                            I joined the United States Army one year after graduation and served as an air traffic controller (air traffic control technician) 
+                            for the first half of my career. I then went to flight school to become an Aviator and became trained and proficient 
+                            in operating the H-64E Apache Guardian Helicopter. I served a tour in Korea for two years and deployed to Iraq in June of 2020.
                             </p>
                         </div>
                 </div>
@@ -169,6 +187,10 @@ export default function FrankiePage() {
                         </figure>
                         <div className='career-description'>
                             <p> 
+                            My Army career brought me to Fort Carson, CO after being in Korea for two years. I decided to stay in Colorado Springs, CO 
+                            after leaving the army and found a place I can call home. I work at a local k-8 charter school along with volunteering with DefendUS. 
+                            I met my best friend (my dog Herme) in November of 2021 and we have been close ever since. 
+                            One of the best parts of living so close to the rockies, is the ability to snowboard whenever I want during the season!
                             </p>
                         </div>
                 </div>

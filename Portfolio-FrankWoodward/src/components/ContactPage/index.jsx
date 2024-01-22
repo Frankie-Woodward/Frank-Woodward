@@ -21,7 +21,12 @@ export default function ContactPage() {
         <LeftArrowAnimation />
             <div className="socials-container">
                 <h1>Contact Me</h1>
-               
+                <p>
+                Github
+                Linkedin
+                Message board
+                Email - submit a message to me
+                </p>
            
 
      
