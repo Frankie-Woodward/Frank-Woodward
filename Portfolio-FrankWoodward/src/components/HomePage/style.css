@@ -11,6 +11,7 @@
     display: flex;
     align-items: center; /* Aligns items vertically center */
     justify-content: space-between; /* Space between elements */
+
 }
 
 .arrow-container {
@@ -24,17 +25,21 @@
     display: flex;
     align-items: center;
     padding-left: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+
 }
 
 .languages-section {
     grid-column: 1 / -1; /* Spanning all columns */
     grid-row: 2; /* In the second row */
-    border: 2px solid black;
     padding: 20px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center; /* Center items vertically */
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.5);
+
 }
 
 
@@ -45,6 +50,7 @@
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
+
 }
 
 .language-item {
@@ -56,8 +62,10 @@
 
 
 .card, .frankie-chat-box {
-    border: 1px solid gray;
     padding: 20px;
+    border-radius: 0;
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.5);
+
 }
 .language-icon {
     margin-bottom: 5px; /* Space between icon and text */

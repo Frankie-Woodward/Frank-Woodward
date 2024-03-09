@@ -33,7 +33,7 @@ const ArrowAnimation = () => {
             </div>
             <div className="profile-and-arrow">
             <div className="card" id='profile-info' style={{ width: '20rem' }}>
-              <img src={profile_pic} className="card-img-top" alt="profile_pic"/>
+              <img src={profile_pic} className="card-img" alt="profile_pic"/>
               <div className="card-body">
                 <h5 className="card-title">Frank Dale Woodward III</h5>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
