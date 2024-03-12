@@ -1,11 +1,15 @@
+/* Existing CSS for larger screens */
 .homepage-container {
     display: grid;
-    grid-template-columns: 2fr 2fr .1fr; /* Three columns of equal size */
-    grid-template-rows: auto 1fr; /* Two rows, top row auto-sized */
+    grid-template-columns: 2fr 2fr .1fr; /* Three columns */
+    grid-template-rows: auto 1fr; /* Two rows */
     gap: 40px;
     padding: 20px;
 }
 
+
+
+/* move chat box to under profile when screen in iphone */
 .profile-and-arrow {
     grid-column: 2; /* Profile card in the middle column */
     display: flex;
@@ -72,4 +76,25 @@
     height: 50px;
     width: 50px;
   }
-  
+
+  @media only screen and (max-width: 650px) {
+    .homepage-container {
+        display: flex; /* Use flex layout for narrow screens */
+        flex-direction: column; /* Stack items vertically */
+    }
+    
+    .profile-and-arrow, .frankie-chat-box, .languages-section {
+        grid-column: 1; /* This line becomes irrelevant in flex context but left for reference */
+    }
+
+    .profile-and-arrow {
+        order: 1;
+    }
+    .frankie-chat-box {
+        order: 2; /* Ensure chat box is below profile card */
+    }
+    .languages-section {
+        order: 3; /* Force languages section to be the last */
+        width: 100%; /* Ensure it spans the full width */
+    }
+}
