@@ -16,15 +16,10 @@ import cforge_creation from '../../assets/cforge_creation.png';
 import cforge_profile from '../../assets/cforge_profile.png';
 import catchem_decks from '../../assets/catchem_decks.png';
 import catchem_deck from '../../assets/catchem_deck.png';
-
-
-
 import 'swiper/css';
 import 'swiper/css/pagination';
-
 import { Pagination } from 'swiper/modules';
 import arrowImage from '../../assets/arrow.jpg';
-
 
 export default function ProjectsPage() {
     const DownArrowAnimation = () => {

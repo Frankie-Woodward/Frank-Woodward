@@ -12,6 +12,8 @@ import react_logo from '../../assets/react-logo.png';
 import postgresql_logo from '../../assets/postgresql-logo.png';
 import profile_pic from '../../assets/profile_picture.jpg';
 import FrankieChatBot from '../AIFrankieBot';
+
+
 export default function Homepage() {
 
 const ArrowAnimation = () => {

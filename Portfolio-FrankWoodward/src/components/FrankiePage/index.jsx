@@ -2,6 +2,14 @@ import './style.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import React from 'react';
 import arrowImage from '../../assets/arrow.jpg';
+import workspace from '../../assets/swe.jpeg';
+import pilot from '../../assets/pilot_me.jpeg';
+import chicago from '../../assets/chicago_skyline.jpg';
+import apache from '../../assets/apache.jpeg'
+import herme from '../../assets/Herme.jpeg'
+import csprings from '../../assets/cSprings_skyline.jpg'
+import snowboard from '../../assets/snowboard Large.jpeg'
+
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -67,11 +75,11 @@ export default function FrankiePage() {
                 <div className='career'>
                     <h1>From Flight To Terminal</h1>
                     <figure className="figure">
-                            <img src='' className="figure-img img-fluid rounded" alt="..."/>
+                            <img src={pilot} className="figure-img img-fluid rounded" alt="..."/>
                             <figcaption className="figure-caption">some text</figcaption>
                         </figure>
                         <figure className="figure">
-                            <img src='' className="figure-img img-fluid rounded" alt=""/>
+                            <img src={workspace} className="figure-img img-fluid rounded" alt=""/>
                             <figcaption className="figure-caption">some text</figcaption>
                         </figure>
                         <div className='career-description'>
@@ -110,11 +118,7 @@ export default function FrankiePage() {
                 <div className='school'>
                     <h1>Life and Chicago</h1>
                     <figure className="figure">
-                            <img src='' className="figure-img img-fluid rounded" alt="..."/>
-                            <figcaption className="figure-caption">some text</figcaption>
-                        </figure>
-                        <figure className="figure">
-                            <img src='' className="figure-img img-fluid rounded" alt=""/>
+                            <img src={chicago} className="figure-img img-fluid rounded" alt="..."/>
                             <figcaption className="figure-caption">some text</figcaption>
                         </figure>
                         <div className='career-description'>
@@ -144,11 +148,7 @@ export default function FrankiePage() {
                 <div className='army'>
                     <h1>All Aviation</h1>
                     <figure className="figure">
-                            <img src='' className="figure-img img-fluid rounded" alt="..."/>
-                            <figcaption className="figure-caption">some text</figcaption>
-                        </figure>
-                        <figure className="figure">
-                            <img src='' className="figure-img img-fluid rounded" alt=""/>
+                            <img src={apache} className="figure-img img-fluid rounded" alt="..."/>
                             <figcaption className="figure-caption">some text</figcaption>
                         </figure>
                         <div className='career-description'>
@@ -178,11 +178,15 @@ export default function FrankiePage() {
                 <div className='family'>
                     <h1>Colorado Springs & Herme</h1>
                     <figure className="figure">
-                            <img src='' className="figure-img img-fluid rounded" alt="..."/>
+                            <img src={csprings} className="figure-img img-fluid rounded" alt="..."/>
                             <figcaption className="figure-caption">some text</figcaption>
                         </figure>
                         <figure className="figure">
-                            <img src='' className="figure-img img-fluid rounded" alt=""/>
+                            <img src={herme} className="figure-img img-fluid rounded" alt=""/>
+                            <figcaption className="figure-caption">some text</figcaption>
+                        </figure>
+                        <figure className="figure">
+                            <img src={snowboard} className="figure-img img-fluid rounded" alt=""/>
                             <figcaption className="figure-caption">some text</figcaption>
                         </figure>
                         <div className='career-description'>
