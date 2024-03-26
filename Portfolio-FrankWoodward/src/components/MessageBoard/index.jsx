@@ -9,6 +9,8 @@ export default function MessageBoard() {
         message: ''
     });
 
+    const [messages, setMessages] = useState([]);
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData(prevState => ({
@@ -19,7 +21,7 @@ export default function MessageBoard() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(formData); // Here you can integrate with your backend to save the data
+        setMessages([...messages, formData]); // Add the current message to the messages array
         // Reset form after submission
         setFormData({
             name: '',
@@ -62,6 +64,14 @@ export default function MessageBoard() {
                 />
                 <button type="submit">Submit</button>
             </form>
+
+            <div className="messages-display">
+                {messages.map((msg, index) => (
+                    <div key={index} className="message">
+                        <p><strong>{msg.name}:</strong> {msg.message}</p>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 }
