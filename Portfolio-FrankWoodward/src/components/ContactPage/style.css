@@ -16,13 +16,13 @@
 
   }
   .figure {
-    margin: 0 25px; /* 25px margin on each side of the figure */
+    margin: 25px; /* 25px margin on each side of the figure */
 }
 
 /* Rest of your styles remain the same */
 
 .figure img {
-    height: 250px;
+    height: 200px;
     width: auto;
    
 }

@@ -12,7 +12,7 @@ import react_logo from '../../assets/react-logo.png';
 import postgresql_logo from '../../assets/postgresql-logo.png';
 import profile_pic from '../../assets/profile_picture.jpg';
 import FrankieChatBot from '../AIFrankieBot';
-
+import MessageBoard from '../MessageBoard';
 
 export default function Homepage() {
 
@@ -32,20 +32,23 @@ const ArrowAnimation = () => {
             
             <div className="frankie-chat-box">
                     <FrankieChatBot />
+                    
+                   <MessageBoard />
             </div>
             <div className="profile-and-arrow">
-            <div className="card" id='profile-info' style={{ width: '20rem' }}>
+            <div className="card" id='profile-info' style={{ width: '20rem',  backgroundColor: 'rgba(255, 255, 255, 0.5)'  }}>
               <img src={profile_pic} className="card-img" alt="profile_pic"/>
               <div className="card-body">
                 <h5 className="card-title">Frank Dale Woodward III</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-              <ul className="list-group list-group-flush">
-                <li className="list-group-item">An item</li>
+                <ul className="list-group list-group-flush">
+                <li className="list-group-item">Software Engineer | Mentor </li>
               </ul>
+                <p className="card-text">Hello, and welcome to my personal Portfolio! While you are here, feel free to ask my assistant questions, or swipethrough the app to your heart's content!</p>
+              </div>
+
               <div className="card-body">
-                <a href="#" className="card-link">Card link</a>
-                <a href="#" className="card-link">Another link</a>
+                <a href="https://www.linkedin.com/in/frankwoodward" className="card-link">Linkedin</a>
+                <a href="https://github.com/Frankie-Woodward" className="card-link">Github</a>
               </div>
             </div>
           <div className='right-arrow'>
@@ -87,10 +90,7 @@ const ArrowAnimation = () => {
                             <img className="language-icon" src={react_logo} alt="react" />
                             <span>React</span>
                         </li>
-                        <li className="language-item">
-                            <img className="language-icon" src={CSS3_logo} alt="CSS" />
-                            <span>CSS</span>
-                        </li>
+
                         {/* ... add more as needed */}
                     </ul>
                 </div>

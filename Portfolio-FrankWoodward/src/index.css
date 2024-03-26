@@ -1,6 +1,11 @@
 
 body {
-  background-image: url('./src/assets/blue_camo.jpg');
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),  /* Dark overlay; adjust alpha for darkness */
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('./src/assets/blue_camo.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

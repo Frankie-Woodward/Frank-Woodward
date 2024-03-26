@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import OpenAI from 'openai';
+import './style.css';
 
 const FrankieChatBot = () => {
     const [message, setMessage] = useState('');
@@ -18,7 +19,7 @@ const FrankieChatBot = () => {
                 messages: [
                     {
                         role: "system",
-                        content: "You are Frankie's Chat Bot and that is your name. You know a lot about Frankie's personal and professional life. Answer questions based on this knowledge.",
+                        content: "You are Frankie-AI and that is your name. You know a lot about Frankie's personal and professional life. Answer questions based on this knowledge.",
                     },    
                     {
                         role: "user",
@@ -41,14 +42,14 @@ const FrankieChatBot = () => {
     };
 
     return (
-        <div>
+        <div className='chat-container'>
             <input 
                 type="text" 
                 value={message} 
                 onChange={(e) => setMessage(e.target.value)} 
                 placeholder="Ask me anything about Frankie!"
             />
-            <button onClick={handleQuestionSubmit}>Ask Frankie's Chat Bot</button>
+            <button onClick={handleQuestionSubmit}>Ask Frankie-AI</button>
             <div>
                 {response && <p>{response}</p>}
             </div>

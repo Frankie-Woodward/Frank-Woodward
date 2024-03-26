@@ -36,7 +36,7 @@ export default function ContactPage() {
                 <LeftArrowAnimation />
               </div>
               <div className='contact'>
-                    <h1>From Flight To Terminal</h1>
+
                     <figure className="figure">
                       <img src={digital} className="figure-img img-fluid rounded" alt="..."/>
                         <figcaption className="figure-caption">some text</figcaption>

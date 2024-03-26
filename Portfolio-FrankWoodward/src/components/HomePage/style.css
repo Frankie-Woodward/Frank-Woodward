@@ -15,7 +15,7 @@
     display: flex;
     align-items: center; /* Aligns items vertically center */
     justify-content: space-between; /* Space between elements */
-
+    
 }
 
 .arrow-container {
@@ -27,6 +27,8 @@
 .frankie-chat-box {
     grid-column: 1;
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     padding-left: 100px;
     background-color: rgba(255, 255, 255, 0.5);

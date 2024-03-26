@@ -16,10 +16,6 @@
     background-color: rgba(255, 255, 255, 0.5);
 
   }
-  #profile-info {
-    width: 20rem;
-    background-color: rgba(255, 255, 255, 0.5); /* 50% opacity white */
-  }
 
   /* Specific styling for left-arrow to ensure it is placed correctly */
   .left-arrow {
@@ -65,16 +61,46 @@
 .figure-caption {
    margin: 0px 10px 0px 0px;
 }
-@media only screen and (max-width: 600px) {
-  .career, .school, .army, .family  {
-    min-width: 300px; /* Ensure divs do not shrink below 300px */
+@media only screen and (max-width: 1000px) {
+  .career, .school, .army, .family {
+    max-height: 630px;
+    min-width: 430px; /* Ensure divs do not shrink below 300px */
     height: 100vh;
     margin: 20px; /* Add space around divs to prevent overlap */
     overflow: auto; /* Make div content scrollable if it overflows */
     box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.5);
     background-color: rgba(255, 255, 255, 0.5);
   }
-  
+  .figure img {
+    height: 100px;
+    width: auto;
+   
+}
+  /* Adjust grid container to accommodate for the spacing */
+  .slide-container {
+    max-height: 630px;
+    display: flex; /* Use flex layout for narrow screens */
+    flex-direction: column; 
+    justify-content: center;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 20px; /* Add gaps between grid items for spacing */
+  }
+}
+@media only screen and (max-width: 600px) {
+  .career, .school, .army, .family  {
+    max-height: 630px;
+    min-width: 300px; /* Ensure divs do not shrink below 300px */
+   
+    margin: 20px; /* Add space around divs to prevent overlap */
+    overflow: auto; /* Make div content scrollable if it overflows */
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .figure img {
+    height: 100px;
+    width: auto;
+   
+}
   /* Adjust grid container to accommodate for the spacing */
   .slide-container {
     

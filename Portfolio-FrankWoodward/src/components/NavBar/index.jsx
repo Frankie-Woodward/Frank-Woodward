@@ -24,7 +24,9 @@ const Navbar = ({ activeIndex, navigateToSlide }) => {
             <NavLink
               className="nav-link"
               to={path}
-              style={isActiveLink(path) ? { fontWeight: 'bold', color: 'blue' } : {}}
+              style={
+                isActiveLink(path) ? { fontWeight: 'bold', color: 'blue', backgroundColor: 'rgba(255, 255, 255, 0.5)' } : { backgroundColor: 'rgba(255, 255, 255, 0.5)'}
+              }
               onClick={() => handleNavLinkClick(path)}
             >
               {path === '/' ? 'Home' : path.substring(1).charAt(0).toUpperCase() + path.substring(2)}
