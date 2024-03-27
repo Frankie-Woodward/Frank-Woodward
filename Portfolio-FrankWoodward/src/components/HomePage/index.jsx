@@ -28,13 +28,16 @@ const ArrowAnimation = () => {
     return (
       <>
         <div className="homepage-container">
-            
-            
-            <div className="frankie-chat-box">
-                    <FrankieChatBot />
-                    
-                   <MessageBoard />
+   
+          <div className="frankie-chat-box">
+            <div className="chat-bot-container">
+              <FrankieChatBot />
             </div>
+            <div className="message-board-container">
+              <MessageBoard />
+            </div>
+          </div>
+          
             <div className="profile-and-arrow">
             <div className="card" id='profile-info' style={{ width: '20rem',  backgroundColor: 'rgba(255, 255, 255, 0.5)'  }}>
               <img src={profile_pic} className="card-img" alt="profile_pic"/>
