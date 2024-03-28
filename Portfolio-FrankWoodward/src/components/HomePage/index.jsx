@@ -46,7 +46,7 @@ const ArrowAnimation = () => {
                 <ul className="list-group list-group-flush">
                 <li className="list-group-item" id="title">Software Engineer | Mentor </li>
               </ul>
-                <p className="card-text">Hello, and welcome to my personal Portfolio! While you are here, feel free to ask my assistant questions, or swipethrough the app to your heart's content!</p>
+                <p className="card-text">Hello, and welcome to my personal Portfolio! While you are here, feel free to ask my assistant questions, or swipe through the app to your heart's content!</p>
               </div>
 
               <div className="card-body">

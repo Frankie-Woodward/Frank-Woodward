@@ -136,11 +136,15 @@ export default function ProjectsPage() {
                         </figure>
                         <div className='project-description'>
                         <p> A Dungeons and Dragons Character Creation Application that allows users to perform
-                            a variety of tasks related to the Dungeons and Dragons game, such as:
-                            <br></br>
-                            a. Choosing from several character race and alignments 
-                            <br></br>
-                            b. The ability for users to roll the dice for their created character’s stats</p>
+                            a variety of tasks related to the Dungeons and Dragons game, such as:</p>
+                            <ul>
+                                <li>
+                                Choosing from several character race and alignments
+                                </li>
+                                <li>
+                                The ability for users to roll the dice for their created character’s stats
+                                </li>
+                            </ul>
                         </div>
                         <div className='languages_used'>
                             <img src={pj_logo}></img>
@@ -175,8 +179,15 @@ export default function ProjectsPage() {
                                 </figure>
                             </div>
                             <div className='project-description'>
-                            <p>A Pokémon TCG Card Collector that allows users to view the latest standard pokemon 
-                                TCG sets/decks as well as save their own custom decks to view at their leisure</p>
+                                <p>A Pokémon TCG Card Collector that allows users to:</p> 
+                                <ul>
+                                    <li>
+                                        View the latest standard pokemon TCG sets/decks 
+                                    </li>
+                                    <li>
+                                        Save their own custom decks to view at their leisure
+                                    </li>
+                                </ul>
                             </div>
                             <div className='languages_used'>
                                 <img src={mongoDB_logo} alt="mongodb"></img>
