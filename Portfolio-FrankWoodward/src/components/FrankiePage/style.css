@@ -14,7 +14,9 @@
     margin: 50px 100px 100px 100px;
     box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.5);
     background-color: rgba(255, 255, 255, 0.5);
-
+    overflow-y: auto;
+    min-height: 500px; /* Minimum height to prevent content from cutting off */
+    max-height: 100vh;
   }
 
   /* Specific styling for left-arrow to ensure it is placed correctly */
@@ -95,6 +97,40 @@
     overflow: auto; /* Make div content scrollable if it overflows */
     box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.5);
     background-color: rgba(255, 255, 255, 0.5);
+  }
+  .figure img {
+    height: 100px;
+    width: auto;
+   
+}
+  /* Adjust grid container to accommodate for the spacing */
+  .slide-container {
+    
+    display: flex; /* Use flex layout for narrow screens */
+    flex-direction: column; 
+    justify-content: center;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 20px; /* Add gaps between grid items for spacing */
+  }
+  
+  /* Adjustments to arrows if necessary to align with the new layout */
+  .left-arrow, .right-arrow, .up-arrow, .down-arrow {
+    justify-self: center;
+    align-self: center;
+    display: none;
+
+  }
+}
+@media only screen and (max-width: 300px) {
+  .career, .school, .army, .family  {
+    max-height: 660px;
+    min-width: 280px; /* Ensure divs do not shrink below 300px */
+   
+    margin: 20px; /* Add space around divs to prevent overlap */
+    overflow: auto; /* Make div content scrollable if it overflows */
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
   }
   .figure img {
     height: 100px;

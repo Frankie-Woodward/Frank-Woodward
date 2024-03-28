@@ -39,15 +39,18 @@ export default function ContactPage() {
 
                     <figure className="figure">
                       <img src={digital} className="figure-img img-fluid rounded" alt="..."/>
-                        <figcaption className="figure-caption">some text</figcaption>
+                        <figcaption className="figure-caption">Digital Terrain Illustration</figcaption>
                     </figure>
                     <div className="socials-container">
-                      <h1>Contact Me</h1>
+                      <h1>Socials & Contact Information</h1>
                         <p>
-                              Github
-                              Linkedin
-                              Message board
-                              Email - submit a message to me
+                        <a href="https://www.linkedin.com/in/frankwoodward" className="card-link">Linkedin</a>
+                        <br></br>
+                        
+                        <a href="https://github.com/Frankie-Woodward" className="card-link">Github</a>
+                       <br></br>
+                        <a href="mailto:fwoodwar@gmail.com" className="card-link">Email - submit a message to me</a>
+
                         </p>
                     </div>
               </div>

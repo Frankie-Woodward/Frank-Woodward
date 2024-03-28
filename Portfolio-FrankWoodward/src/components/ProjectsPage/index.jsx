@@ -78,7 +78,7 @@ export default function ProjectsPage() {
                 <LeftArrowAnimation />
                 </div>
                     <div className='identify'>
-                        <h1>Identify Quest</h1>
+                        <a href="https://identify-quest-cd810d9e776b.herokuapp.com"><h1>Identify Quest</h1></a>
                         <figure className="figure">
                             <img src={idquest_request} className="figure-img img-fluid rounded" alt="..."/>
                             <figcaption className="figure-caption">AI Chat Interface</figcaption>
@@ -88,11 +88,19 @@ export default function ProjectsPage() {
                             <figcaption className="figure-caption">Composite Image Response from AI</figcaption>
                         </figure>
                         <div className='project-description'>
-                            <p>An AI Composite-Sketch application which allows users to <br></br>create ai-generated 
-                                composite sketches of individuals who have committed<br></br> a crime and save them 
-                                to submit to their local 911 emergency teams. 
+                            <p>
+                                An AI Composite-Sketch application which allows users to:
                             </p>
+                            <ul> 
+                                <li>
+                                    Create ai-generated composite sketches of individuals who have committed a crime 
+                                </li> 
+                                <li>
+                                    Save the sketches to submit to their local 911 emergency teams. 
+                                </li>
+                            </ul>
                         </div>
+
                         <div className='languages_used'>
                             <img src={mongoDB_logo} alt="mongodb"></img>
                             <img src={express_js_logo}></img>
@@ -117,7 +125,7 @@ export default function ProjectsPage() {
                 <LeftArrowAnimation />
                 </div>
                     <div className='c-forge'>
-                        <h1>Character Forge</h1>
+                        <a href="https://character-forge-1fbe226688ee.herokuapp.com"><h1>Character Forge</h1></a>
                         <figure className="figure">
                             <img src={cforge_creation} className="figure-img img-fluid rounded" alt="..."/>
                             <figcaption className="figure-caption">Character Creation Interface</figcaption>
@@ -154,8 +162,8 @@ export default function ProjectsPage() {
                 <div className='left-arrow'>
                 <LeftArrowAnimation />
                 </div>
-                        <div className='catchem-all'>
-                            <h1>Catchem All</h1>
+                    <div className='catchem-all'>
+                        <a href="https://catchem-all-68c8e2613b1d.herokuapp.com/users/new"><h1>Catchem All</h1></a>
                             <div className='project-images'>
                                 <figure className="figure">
                                     <img src={catchem_decks} className="figure-img img-fluid rounded" alt="..."/>

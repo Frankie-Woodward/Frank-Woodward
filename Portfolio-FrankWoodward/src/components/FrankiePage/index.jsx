@@ -76,28 +76,35 @@ export default function FrankiePage() {
                     <h1>From Flight To Terminal</h1>
                     <figure className="figure">
                             <img src={pilot} className="figure-img img-fluid rounded" alt="..."/>
-                            <figcaption className="figure-caption">some text</figcaption>
+                            <figcaption className="figure-caption">Apache Pilot Workspace</figcaption>
                         </figure>
                         <figure className="figure">
                             <img src={workspace} className="figure-img img-fluid rounded" alt=""/>
-                            <figcaption className="figure-caption">some text</figcaption>
+                            <figcaption className="figure-caption">Software Engineer Workspace</figcaption>
                         </figure>
                         <div className='career-description'>
-                            <p> 
-                            Why I wanted to get into swe - 
-                            I understand the irony, but I have to say that the technical skills required for operating an 
-                            AH64E helicopter provided me with the attention to detail needed to be a successful software engineer. 
-                            From planning, rehearsals, and troubleshooting software issues in the helicopter, to planning, testing, 
-                            and debugging software code in the terminal of my computer.
-                            General Assembly
-                            I attended General Assembly’s Software Engineering Immersive course and graduated in November of 2023. 
-                            I had only been slowly progressing in my  HTML at that point, and the course was able to give me the 
-                            tools needed to code applications with React, JS, HTML, CSS, Python, and SQL database operations. 
-                            DefendUS - 65square
-                            I am currently volunteering for a nonprofit ran organization as a backend Python tester for their 
-                            social media application, 65square. 
+                            <h3>Transition to Software Engineering</h3>
+                            <p>
+                                My journey into software engineering was influenced by my technical experience operating an AH64E helicopter. 
+                                The attention to detail required in this role, from planning and rehearsals to troubleshooting software issues, 
+                                seamlessly translated into the skills needed for a successful career in software development.
+                            </p>
+
+                            <h3>Education and Training</h3>
+                            <p>
+                                I enhanced my technical foundation by attending General Assembly’s Software Engineering Immersive course, 
+                                graduating in November of 2023. Initially, my progress in HTML was slow, but the course equipped me with 
+                                essential tools and knowledge in React, JavaScript, HTML, CSS, Python, and SQL database operations.
+                            </p>
+
+                            <h3>Professional Experience</h3>
+                            <p>
+                                Currently, I am volunteering for DefendUS, a nonprofit organization, as a backend Python tester for their social 
+                                media application, 65square. This role allows me to apply and further develop my software testing and backend 
+                                development skills.
                             </p>
                         </div>
+
                 </div>
                 <div className='down-arrow'>
                         <DownArrowAnimation />
@@ -119,7 +126,7 @@ export default function FrankiePage() {
                     <h1>Life and Chicago</h1>
                     <figure className="figure">
                             <img src={chicago} className="figure-img img-fluid rounded" alt="..."/>
-                            <figcaption className="figure-caption">some text</figcaption>
+                            <figcaption className="figure-caption">Chicago Skyline</figcaption>
                         </figure>
                         <div className='career-description'>
                             <p>
@@ -149,7 +156,7 @@ export default function FrankiePage() {
                     <h1>All Aviation</h1>
                     <figure className="figure">
                             <img src={apache} className="figure-img img-fluid rounded" alt="..."/>
-                            <figcaption className="figure-caption">some text</figcaption>
+                            <figcaption className="figure-caption">Flying the Apache in South Korea</figcaption>
                         </figure>
                         <div className='career-description'>
                             <p> 
@@ -176,28 +183,28 @@ export default function FrankiePage() {
                 <LeftArrowAnimation />
                 </div>
                 <div className='family'>
-                    <h1>Colorado Springs & Herme</h1>
+                    <h1>Life in Colorado Springs & Adventures with Herme</h1>
                     <figure className="figure">
-                            <img src={csprings} className="figure-img img-fluid rounded" alt="..."/>
-                            <figcaption className="figure-caption">some text</figcaption>
-                        </figure>
-                        <figure className="figure">
-                            <img src={herme} className="figure-img img-fluid rounded" alt=""/>
-                            <figcaption className="figure-caption">some text</figcaption>
-                        </figure>
-                        <figure className="figure">
-                            <img src={snowboard} className="figure-img img-fluid rounded" alt=""/>
-                            <figcaption className="figure-caption">some text</figcaption>
-                        </figure>
-                        <div className='career-description'>
-                            <p> 
-                            My Army career brought me to Fort Carson, CO after being in Korea for two years. I decided to stay in Colorado Springs, CO 
-                            after leaving the army and found a place I can call home. I work at a local k-8 charter school along with volunteering with DefendUS. 
-                            I met my best friend (my dog Herme) in November of 2021 and we have been close ever since. 
-                            One of the best parts of living so close to the rockies, is the ability to snowboard whenever I want during the season!
-                            </p>
-                        </div>
+                        <img src={csprings} className="figure-img img-fluid rounded" alt="Colorado Springs Skyline"/>
+                        <figcaption className="figure-caption">Colorado Springs Skyline</figcaption>
+                    </figure>
+                    <figure className="figure">
+                        <img src={herme} className="figure-img img-fluid rounded" alt="Herme"/>
+                        <figcaption className="figure-caption">My dog Herme</figcaption>
+                    </figure>
+                    <figure className="figure">
+                        <img src={snowboard} className="figure-img img-fluid rounded" alt="Snowboarding"/>
+                        <figcaption className="figure-caption">Snowboarding in the Rockies</figcaption>
+                    </figure>
+                    <div className='career-description'>
+                        <p>
+                            Post-military, I settled in Colorado Springs, CO, embracing the local community and outdoor lifestyle. 
+                            I work at a local k-8 charter school and volunteer with DefendUS. I adopted Herme in November 2021, 
+                            and we've enjoyed exploring Colorado's natural beauty, especially snowboarding in the Rockies.
+                        </p>
+                    </div>
                 </div>
+
                     <div className='right-arrow'>
                     <RightArrowAnimation />
                     </div>

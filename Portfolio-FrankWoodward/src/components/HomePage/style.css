@@ -7,7 +7,10 @@
     padding: 20px;
 }
 
-
+#title {
+    background-color: rgb(63, 92, 166);
+    color: white;
+}
 
 /* move chat box to under profile when screen in iphone */
 .profile-and-arrow {
@@ -35,7 +38,7 @@
 }
 .chat-bot-container,
 .message-board-container {
-    width: 100%; /* Take full width of the parent */
+    width: 50%; /* Take full width of the parent */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,6 +102,68 @@
 
     .profile-and-arrow {
         order: 1;
+        padding-left: 30px;
+    }
+    .frankie-chat-box {
+        order: 2; /* Ensure chat box is below profile card */
+    }
+    .languages-section {
+        order: 3; /* Force languages section to be the last */
+        width: 100%; /* Ensure it spans the full width */
+    }
+}
+
+  @media only screen and (max-width: 430px) {
+    .homepage-container {
+        display: flex; /* Use flex layout for narrow screens */
+        flex-direction: column; /* Stack items vertically */
+    }
+    .chat-bot-container,
+    .message-board-container {
+    width: 100%; /* Take full width of the parent */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0; /* Add some vertical space between them */
+}
+    .profile-and-arrow, .frankie-chat-box, .languages-section {
+        grid-column: 1; /* This line becomes irrelevant in flex context but left for reference */
+    }
+
+    .profile-and-arrow {
+        order: 1;
+        padding-left: 30px;
+    }
+    .frankie-chat-box {
+        order: 2; /* Ensure chat box is below profile card */
+    }
+    .languages-section {
+        order: 3; /* Force languages section to be the last */
+        width: 100%; /* Ensure it spans the full width */
+    }
+}
+
+  @media only screen and (max-width: 280px) {
+    .homepage-container {
+        display: flex; /* Use flex layout for narrow screens */
+        flex-direction: column; /* Stack items vertically */
+    }
+    .chat-bot-container,
+    .message-board-container {
+    width: 75%; /* Take full width of the parent */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0; /* Add some vertical space between them */
+}
+    .profile-and-arrow, .frankie-chat-box, .languages-section {
+        grid-column: 1; /* This line becomes irrelevant in flex context but left for reference */
+    }
+
+    .profile-and-arrow {
+        order: 1;
+        margin-left: 5px;
+        font-size: 16px;
     }
     .frankie-chat-box {
         order: 2; /* Ensure chat box is below profile card */
